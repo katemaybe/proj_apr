@@ -1,0 +1,20 @@
+.partners__inner {
+    @extend .container;
+    
+}
+
+
+.partners__container {
+    padding: 0.75rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.partners__element {
+    max-width: 12.3575rem;
+    padding: 2.625rem 2.625rem 3.12125rem 2.6875rem;
+    border-left: 1px solid #E5E5E5;
+}
+

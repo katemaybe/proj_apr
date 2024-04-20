@@ -1,0 +1,36 @@
+.about__inner {
+    @extend .container;
+  
+}
+.about {
+    padding: 5rem 0;
+    background-color: $c-bg-secondary;
+}
+.about__title {
+    max-width: 34rem;
+    margin: 0 auto;
+}
+.about__text {
+    max-width: 34rem;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    padding-top: 0.94rem ;
+    padding-bottom: 2rem;
+}
+
+.btn__container{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:1.75rem
+
+}
+.about-btn {
+    border: 1px solid #F5F5F5;
+}
+
+.meeting__img {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}

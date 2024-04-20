@@ -1,0 +1,40 @@
+.services__inner {
+    @extend .container;
+    
+}
+.services{
+    padding: 5rem 0;
+}
+
+
+.row{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap:3rem;
+}
+
+.services-features__element {
+    max-width: 23rem;
+    svg{
+        fill: $c-bg-primary;
+        width: 3.5rem;
+        height: 3.5rem;
+        
+        }
+    @include hover(){
+        svg {
+              fill: #F2F1FF;
+            
+          }
+  
+        
+    }
+
+    p{
+        color: $c-font-tertiary;
+        font-size: 0.875rem;
+        padding-top: 0.63rem;
+    }
+
+}
