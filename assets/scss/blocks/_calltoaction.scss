@@ -1,0 +1,43 @@
+.calltoaction__inner {
+    @extend .container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:3.94rem
+  
+}
+.calltoaction {
+    padding: 5rem 0;
+    background-color: $c-bg-secondary;
+
+}
+
+.calltoaction__container{
+    max-width: 37rem;
+}
+.calltoaction__title {
+    margin: 0 auto;
+    text-align: left;
+}
+.calltoaction__text {
+    line-height: 1.5rem;
+    padding-top: 0.94rem ;
+    padding-bottom: 3rem;
+}
+
+.calltoaction-btn__container{
+display: flex;
+gap:1.75rem;
+
+
+}
+.about-btn {
+    border: 1px solid #F5F5F5;
+}
+
+.meeting__img {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}

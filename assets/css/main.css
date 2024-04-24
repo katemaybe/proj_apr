@@ -214,7 +214,7 @@ body {
 .wrapper {
   overflow-x: hidden; }
 
-.container, .header__inner, .about__inner, .team__inner, .services__inner, .projects__inner, .reviews__inner, .contact__inner, .partners__inner {
+.container, .header__inner, .footer__inner, .about__inner, .services__inner, .partners__inner, .calltoaction__inner {
   max-width: 92rem;
   width: 100%;
   margin: 0 auto;
@@ -300,12 +300,63 @@ body {
     .menu__inner .header-btn {
       visibility: hidden; } }
 
+footer {
+  padding: 4.38rem 0; }
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-flow: row wrap; }
+  @media (max-width: 1024px) {
+    .footer__inner {
+      flex-direction: column; } }
+  .footer__inner p, .footer__inner a {
+    color: #222; }
+
+.footer__title {
+  color: #222;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  line-height: 1.70625rem;
+  text-transform: uppercase; }
+
+.links__element {
+  justify-content: center;
+  width: 14.8rem; }
+
+.footer h6 {
+  float: left; }
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  float: left;
+  gap: 1.75rem; }
+  @media (max-width: 1024px) {
+    .links {
+      flex-direction: column;
+      align-self: center;
+      gap: 1rem;
+      margin-top: 2rem; } }
+
+.footer__link {
+  font-size: 1.1375rem;
+  font-weight: 400;
+  line-height: 1.47875rem; }
+  .footer__link a {
+    transition: .3s ease; }
+
+.about__container {
+  text-align: center; }
+
 .about {
   padding: 5rem 0;
   background-color: #000; }
 
 .about__title {
-  max-width: 34rem;
+  max-width: 36rem;
   margin: 0 auto; }
 
 .about__text {
@@ -328,48 +379,6 @@ body {
   width: 100%;
   text-align: center;
   padding-top: 2rem; }
-
-.team {
-  padding-bottom: 6rem; }
-
-.team {
-  background: linear-gradient(#FFFFFF 30%, #FFFFFF 7%); }
-  @media (max-width: 1024px) {
-    .team {
-      background: linear-gradient(#FFFFFF 20%, #FFFFFF 7%); } }
-
-.meeting__img {
-  width: 100%;
-  text-align: center; }
-
-.numbers {
-  padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; }
-
-.numbers__element {
-  width: 12.3575rem;
-  padding: 2.625rem 2.625rem 3.12125rem 2.6875rem; }
-
-.numbers__value {
-  color: #2A2C3D;
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal; }
-
-.numbers__text {
-  color: #2A2C3D;
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; }
 
 .services {
   padding: 5rem 0; }
@@ -394,163 +403,6 @@ body {
     font-size: 0.875rem;
     padding-top: 0.63rem; }
 
-.projects {
-  padding: 3.75rem 0; }
-
-.projects__header {
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; }
-
-.projects__text {
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 2rem; }
-
-.projects__features {
-  padding-top: 2.5rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.12rem; }
-  @media (max-width: 1024px) {
-    .projects__features {
-      flex-direction: column; } }
-
-.projects__element {
-  flex: 1; }
-  .projects__element p {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6875rem;
-    opacity: 0.71; }
-
-.projects__img {
-  width: 100%; }
-
-.projects_text {
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal; }
-
-.reviews {
-  padding: 3rem 0; }
-
-.reviews__header {
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal; }
-
-.reviews__text {
-  font-size: 2.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-bottom: 2.5rem; }
-
-.reviews__features {
-  padding-top: 2.5rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.44rem; }
-  @media (max-width: 1024px) {
-    .reviews__features {
-      flex-direction: column; } }
-
-.reviews__element {
-  justify-content: space-between;
-  flex: 1;
-  padding-top: 1.3rem;
-  display: inline-flex;
-  min-height: 7.6rem;
-  padding: 1.5rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.3125rem;
-  border: 2px solid var(--Black, #2A2C3D); }
-  .reviews__element p {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6875rem;
-    opacity: 0.71; }
-  .reviews__element h3 {
-    opacity: 1;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal; }
-
-.reviews__img {
-  width: 100%; }
-
-.reviews__people {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; }
-  .reviews__people h5 {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal; }
-  .reviews__people p {
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    opacity: 0.71; }
-
-.reviews-people__inner {
-  max-width: 9rem; }
-
-.contact {
-  padding: 3.75rem 0;
-  background-color: #FFFFFF;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal; }
-
-.contact__group {
-  text-align: center; }
-
-.contact__creator {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 41rem; }
-  .contact__creator h3 {
-    color: #FFF;
-    text-align: center;
-    font-family: "Open Sans";
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; }
-  .contact__creator h5 {
-    color: #FFF;
-    text-align: center;
-    font-family: "Open Sans";
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.6875rem; }
-
-.contact__text {
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.6875rem; }
-
 .partners__container {
   padding: 0.75rem 0;
   display: flex;
@@ -562,3 +414,44 @@ body {
   max-width: 12.3575rem;
   padding: 2.625rem 2.625rem 3.12125rem 2.6875rem;
   border-left: 1px solid #E5E5E5; }
+
+.calltoaction__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3.94rem; }
+
+.calltoaction {
+  padding: 5rem 0;
+  background-color: #000; }
+
+.calltoaction__container {
+  max-width: 37rem; }
+
+.calltoaction__title {
+  margin: 0 auto;
+  text-align: left; }
+
+.calltoaction__text {
+  line-height: 1.5rem;
+  padding-top: 0.94rem;
+  padding-bottom: 3rem; }
+
+.calltoaction-btn__container {
+  display: flex;
+  gap: 1.75rem; }
+
+.about-btn {
+  border: 1px solid #F5F5F5; }
+
+.meeting__img {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem; }
+
+.calltoaction-white {
+  padding: 5rem 0;
+  background-color: #FFFFFF; }
+  .calltoaction-white h2, .calltoaction-white p {
+    color: #000; }

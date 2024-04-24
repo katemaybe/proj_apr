@@ -2,12 +2,16 @@
     @extend .container;
   
 }
+.about__container {
+    text-align: center;
+  
+}
 .about {
     padding: 5rem 0;
     background-color: $c-bg-secondary;
 }
 .about__title {
-    max-width: 34rem;
+    max-width: 36rem;
     margin: 0 auto;
 }
 .about__text {
