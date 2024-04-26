@@ -16,5 +16,8 @@
     max-width: 12.3575rem;
     padding: 2.625rem 2.625rem 3.12125rem 2.6875rem;
     border-left: 1px solid #E5E5E5;
+    @include media('<desktop') {
+        border: none;
+      }
 }
 
