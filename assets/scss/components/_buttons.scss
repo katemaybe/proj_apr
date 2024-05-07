@@ -1,5 +1,5 @@
 .black__square-btn{
-    padding: 1.125rem 1.47031rem 1.125rem 1.48281rem;
+  padding:  1.125rem 1.47031rem 1.125rem 1.48281rem;
     background: $c-bg-secondary;
     span{
         color: $c-bg-primary;
@@ -12,6 +12,7 @@
     }
     @include hover() {
         background: $c-bg-primary;
+        border: 1px solid $c-bg-secondary;
     
         span {
           color: $c-bg-secondary;
@@ -20,7 +21,31 @@
         
       }
 }
-
+.black__square-btn-info{
+ padding: 1.0625rem 2.41469rem 1.0625rem 2.42719rem;
+    background: $c-bg-secondary;
+    border:  1px solid #F5F5F5;
+    span{
+        color: $c-bg-primary;
+        text-align: center;
+        font-family: $font-primary;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        
+    }
+    @include hover() {
+        background: $c-bg-primary;
+        border: 1px solid $c-bg-secondary;
+    
+        span {
+          color: $c-bg-secondary;
+        }
+    
+        
+      }
+}
 .white__round-btn{
     padding: 1.0625rem 2.4375rem;
 flex-direction: column;
@@ -28,7 +53,7 @@ align-items: center;
 border-radius: 3rem;
 border: 1px solid #000;
 background: $c-bg-primary;
-box-shadow: 0px 4px 10px 0px;
+// box-shadow: 0px 4px 10px 0px;
 span{
     color: $c-bg-secondary;
 
@@ -41,9 +66,11 @@ line-height: 1.25rem;
 }
 @include hover() {
     background: $c-bg-secondary;
+    border: 1px solid $c-bg-primary;
 
     span {
       color: $c-bg-primary;
+    
     }
 
     

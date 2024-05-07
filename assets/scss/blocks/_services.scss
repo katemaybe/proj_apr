@@ -15,26 +15,21 @@
 }
 
 .services-features__element {
-    max-width: 23rem;
+    max-width: 23.5rem;
     svg{
         fill: $c-bg-primary;
         width: 3.5rem;
         height: 3.5rem;
+        fill: #F2F1FF;
+       
         
-        }
-    @include hover(){
-        svg {
-              fill: #F2F1FF;
-            
-          }
-  
+        
         
     }
-
+    
     p{
         color: $c-font-tertiary;
         font-size: 0.875rem;
-        padding-top: 0.63rem;
     }
 
 }

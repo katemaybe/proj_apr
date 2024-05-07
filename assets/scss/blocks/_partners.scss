@@ -1,7 +1,4 @@
-.partners__inner {
-    @extend .container;
-    
-}
+
 
 
 .partners__container {
@@ -10,6 +7,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    :nth-child(1) {
+        border-left: none;
+      }
+      
 
 }
 .partners__element {
